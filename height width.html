@@ -1,0 +1,60 @@
+<!-- 
+    width() - content width
+    height()-  
+    innerWidth()- inner border
+    innerHeight()
+    outerWidth()- outer border se 
+    outerHeight()
+    outerWidth()
+    outerWidth(true) margin + width
+    outerHeight(true)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.0.js"></script>
+    <style>
+		body{ font-family: arial; }
+		h1{ font-size: 25px; }
+		#box{
+			background: lightgreen;
+			padding: 30px 30px;
+			border: 10px solid #000;
+		}
+	</style>
+
+ </head>
+ <body>
+    <h1>jQuery Width & Height Methods</h1>
+	<div id="box">
+		<h2>Test Box</h2>
+		<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, similique quasi. Commodi molestias tempore impedit, quos cumque harum, ad quibusdam fugiat! Earum excepturi assumenda, libero dolores expedita, aliquid provident saepe?</p>
+	</div>
+	<br>
+	<button id="widthBtn">Width</button>
+	<button id="heightBtn">Height</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#widthBtn").click(function(){
+                console.log("Width : "+ $("#box").width())
+                console.log("Inner Width : "+ $("#box").innerWidth())
+                console.log("Outer Width : "+ $("#box").outerWidth())
+                console.log("Outer Width(true) : "+ $("#box").outerWidth(true))
+
+            })
+            $("#heightBtn").click(function(){
+                console.log("Height : "+ $("#box").height())
+                console.log("Inner Height : "+ $("#box").innerHeight())
+                console.log("Outer Height : "+ $("#box").outerHeight())
+                console.log("Outer Height(true) : "+ $("#box").outerHeight(true))
+
+            })
+                })
+    </script>
+ </body>
+ </html>
