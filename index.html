@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.0.js"></script>
+</head>
+<body>
+<div class="test1" id="test1">
+    <h2>Test1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, temporibus.</p>
+</div>
+
+<div class="test2" id="test2">
+    <h2>Test2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, temporibus.</p>
+</div>
+
+    <script>
+       $(document).ready(function(){
+        var a= $('#test1').html;
+        console.log(a);
+        var b= $('#test2').html;
+        console.log(b);
+       })
+    </script>
+
+</body>
+</html>
